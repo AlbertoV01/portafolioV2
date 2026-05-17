@@ -1,0 +1,33 @@
+name: Desplegar Portafolio a GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # Se ejecuta cada vez que haces push a main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # 1. Instalar el entorno de .NET
+    - name: Configurar .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x' # Cambia a '9.0.x' si estás usando .NET 9
+
+    # 2. Publicar y compilar el proyecto Blazor en modo Release
+    - name: Compilar Proyecto
+      run: dotnet publish -c Release -o release
+
+    # 3. Truco para GitHub Pages (Evitar el error 404 en las rutas de Blazor)
+    - name: Copiar index.html a 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+    # 4. Desplegar los archivos de wwwroot a la rama gh-pages
+    - name: Desplegar a GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages # GitHub Pages leerá esta rama automáticamente
+        folder: release/wwwroot
