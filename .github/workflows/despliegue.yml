@@ -2,32 +2,37 @@ name: Desplegar Portafolio a GitHub Pages
 
 on:
   push:
-    branches: [ main ] # Se ejecuta cada vez que haces push a main
+    branches: [ main ]
+
+# PASO CLAVE 1: Darle permisos explícitos al servidor para escribir la rama gh-pages
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Clonar el repositorio
+      uses: actions/checkout@v4
 
-    # 1. Instalar el entorno de .NET
     - name: Configurar .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' # Cambia a '9.0.x' si estás usando .NET 9
+        dotnet-version: '8.0.x'
 
-    # 2. Publicar y compilar el proyecto Blazor en modo Release
-    - name: Compilar Proyecto
-      run: dotnet publish -c Release -o release
+    # PASO CLAVE 2: Apuntar directamente al archivo .csproj en lugar de la solución (.sln)
+    # NOTA: Si cambiaste el nombre de tu proyecto, asegúrate de escribir abajo el nombre exacto de tu nuevo archivo .csproj
+    - name: Compilar y Publicar Proyecto
+      run: dotnet publish portafolioV2.csproj -c Release -o release
 
-    # 3. Truco para GitHub Pages (Evitar el error 404 en las rutas de Blazor)
     - name: Copiar index.html a 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
 
-    # 4. Desplegar los archivos de wwwroot a la rama gh-pages
-    - name: Desplegar a GitHub Pages
+    # PASO CLAVE 3: El token automático de GitHub le dará el pase de acceso a la acción
+    - name: Enviar a GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages # GitHub Pages leerá esta rama automáticamente
+        branch: gh-pages
         folder: release/wwwroot
+        token: ${{ secrets.GITHUB_TOKEN }}
