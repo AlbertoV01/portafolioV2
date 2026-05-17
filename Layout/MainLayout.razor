@@ -1,0 +1,71 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+@inject IJSRuntime JS
+@implements IDisposable
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row ">
+            <div class="tech-carousel">
+
+                @foreach (var tech in technologies)
+                {
+                    <div class="tech-item">
+                        <img src="@tech.Icon" alt="@tech.Name" title="@tech.Name" />
+                    </div>
+                }
+        
+            </div>
+        </div>
+        
+       
+    @code {
+    private List<(string Name, string Icon)> technologies = new()
+    {
+        ("C#", "icons/csharp-original.svg"),
+        ("SQL Server", "/icons/sqldeveloper-original.svg"),
+        ("Blazor", "/icons/blazor-original.svg"),
+        ("HTML5", "/icons/html5-original.svg"),
+        ("CSS3", "/icons/css3-original.svg"),
+        ("JavaScript", "/icons/javascript-original.svg"),
+        ("Git", "/icons/git-original.svg"),
+        ("Azure", "/icons/azure-original.svg")
+    };
+
+
+ protected override void OnInitialized()
+    {
+        Navigation.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    {
+        if (Navigation.Uri.Contains("/projects", StringComparison.OrdinalIgnoreCase))
+        {
+            JS.InvokeVoidAsync("setBodyOverflow", "auto");
+        }
+        else
+        {
+            JS.InvokeVoidAsync("setBodyOverflow", "hidden");
+        }
+    }
+
+    public void Dispose()
+    {
+        Navigation.LocationChanged -= OnLocationChanged;
+    }
+
+
+    }
+
+
+        <article class="content px-4, home-container">
+            @Body
+        </article>
+        
+    </main>
+</div>

@@ -1,0 +1,62 @@
+@page "/certifications"
+@inject IJSRuntime JS
+<div class="container my-5">
+    <h2 class="text-center mb-5 text-uppercase fw-bold">
+        Mis cursos y certificados
+    </h2>
+
+    <!-- Cuadrícula Adaptable (Grid) -->
+    <div class="certificaciones-grid">
+        @foreach (var cert in ListaCertificados)
+        {
+            <!-- Tarjeta/Marco de Certificación -->
+            <div class="cert-marco reveal animate-fadeIn">
+                <div class="cert-contenido">
+                    <div class="cert-imagen-wrapper">
+                        <!-- Usamos la ruta relativa ./images/ como mencionaste -->
+                        <img src="./images/@cert.Imagen" alt="@cert.Titulo" class="cert-img" />
+                    </div>
+                    <div class="cert-info text-center mt-3">
+                        <h5 class="fw-bold text-white mb-1">@cert.Titulo</h5>
+                        <p class="text-blue-light small mb-0">@cert.Institucion</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    // Modelo de datos para simular tus certificaciones
+    public class Certificado
+    {
+        public string Titulo { get; set; } = string.Empty;
+        public string Institucion { get; set; } = string.Empty;
+        public string Imagen { get; set; } = string.Empty;
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Le dice a JavaScript que fuerce el scroll a la posición 0 
+            // y reactive el desbordamiento del body en el navegador
+            await JS.InvokeVoidAsync("eval", "document.body.style.overflowY = 'auto'; document.documentElement.style.overflowY = 'auto';");
+        }
+    }
+
+    // Lista de ejemplo (Agrega o quita elementos y verás cómo se acomodan solos)
+    private List<Certificado> ListaCertificados = new()
+    {   
+        new Certificado { Titulo = "Conceptos Básicos de Hardware de Computadora", Institucion = "Cisco Network Academy", Imagen = "computerhardware.png" },
+        new Certificado { Titulo = "Responsive Web Design", Institucion = "freeCodeCamp", Imagen = "responsivewd.png" },
+        new Certificado { Titulo = "Foundational C# with Microsoft", Institucion = "freeCodeCamp", Imagen = "microsoftfoundation.png" },
+        new Certificado { Titulo = "Curso de C Y C++ ¡Desde 0!", Institucion = "Udemy", Imagen = "curso c y cmasmas.jpg" },
+        new Certificado { Titulo = "Máster en SQL Server: Desde cero a nivel Profesional [2024]", Institucion = "Udemy", Imagen = "mastersqlserver.jpg" },
+        new Certificado { Titulo = "Aprende SQL desde cero: ¡Curso con mas de 50 ejercicios! 1", Institucion = "Udemy", Imagen = "sql50ejercicios.jpg" },
+        new Certificado { Titulo = "Indtroducción a C#", Institucion="sololearn", Imagen="introductioncsharp.jpg"},
+        new Certificado { Titulo = "Crea un videojuego como Flappy Bird desde 0", Institucion = "Udemy", Imagen = "flappybird.jpg" },
+        new Certificado { Titulo = "Aprende a programar desde cero en Visual Studio", Institucion = "Udemy", Imagen = "visualstudio.jpg" },
+        new Certificado { Titulo = "Master en C# de cero a (Windows Forms - Xamarin - App Consola)", Institucion = "Udemy", Imagen = "masterencsharp.jpg" },
+        new Certificado { Titulo = "Fundamento de Bases de datos para principiantes", Institucion = "Udemy", Imagen = "fundamentosbdd.jpg" }
+    };
+}

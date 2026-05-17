@@ -1,0 +1,35 @@
+@using portafolioV2.Models
+@inherits OwningComponentBase
+
+
+<div class="project-card animate-fadeIn">
+    <img class="project-screenshot" src="@Project?.ImageUrl" alt="@Project?.Title" />
+    <div class="project-body">
+        <h3 class="project-title">@Project?.Title</h3>
+        <p class="desc">@Project?.ShortDescription</p>
+
+        <div class="tech-row">
+            @foreach(TechIcon tech in Project?.Technologies ?? Enumerable.Empty<TechIcon>())
+            {
+                <img class="tech-icon" src="@tech.IconUrl" alt="@tech.Name" title="@tech.Name" />
+
+            }
+        </div>
+
+        <div class="links">
+            @if(!string.IsNullOrWhiteSpace(Project?.GitUrl))
+            {
+                <a target="_blank" href="@Project.GitUrl" class="btn">GitHub</a>
+            }
+            @if(!string.IsNullOrWhiteSpace(Project?.DemoUrl))
+            {
+                <a target="_blank" href="@Project.DemoUrl" class="btn outline">Demo</a>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public ProjectItem ?Project { get; set; }
+}
