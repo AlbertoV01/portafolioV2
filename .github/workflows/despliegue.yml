@@ -25,9 +25,12 @@ jobs:
     # NOTA: Si cambiaste el nombre de tu proyecto, asegúrate de escribir abajo el nombre exacto de tu nuevo archivo .csproj
     - name: Compilar y Publicar Proyecto
       run: dotnet publish *.csproj -c Release -o release -p:BlazorEnableCompression=false
-
-    - name: Copiar index.html a 404.html
-      run: cp release/wwwroot/index.html release/wwwroot/404.html
+      
+      # PASO CLAVE: Creamos el archivo .nojekyll en la carpeta de salida
+    - name: Soluciones para GitHub Pages (404 y NoJekyll)
+      run: |
+        cp release/wwwroot/index.html release/wwwroot/404.html
+        touch release/wwwroot/.nojekyll
 
     # PASO CLAVE 3: El token automático de GitHub le dará el pase de acceso a la acción
     - name: Enviar a GitHub Pages
