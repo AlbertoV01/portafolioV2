@@ -12,20 +12,10 @@
         
        
     @code {
-    private List<(string Name, string Icon)> technologies = new()
-    {
-        ("C#", "icons/csharp-original.svg"),
-        ("SQL Server", "/icons/sqldeveloper-original.svg"),
-        ("Blazor", "/icons/blazor-original.svg"),
-        ("HTML5", "/icons/html5-original.svg"),
-        ("CSS3", "/icons/css3-original.svg"),
-        ("JavaScript", "/icons/javascript-original.svg"),
-        ("Git", "/icons/git-original.svg"),
-        ("Azure", "/icons/azure-original.svg")
-    };
+   
 
 
- protected override void OnInitialized()
+  protected override void OnInitialized()
     {
         Navigation.LocationChanged += OnLocationChanged;
     }
