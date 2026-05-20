@@ -2,8 +2,8 @@
 @inherits OwningComponentBase
 
 
-<div class="project-card animate-fadeIn">
-    <img class="project-screenshot" src="@Project?.ImageUrl" alt="@Project?.Title" />
+<div class="project-card">
+    <img class="project-screenshot img-fluid" src="@Project?.ImageUrl" alt="@Project?.Title" />
     <div class="project-body">
         <h3 class="project-title">@Project?.Title</h3>
         <p class="desc">@Project?.ShortDescription</p>
@@ -11,8 +11,7 @@
         <div class="tech-row">
             @foreach(TechIcon tech in Project?.Technologies ?? Enumerable.Empty<TechIcon>())
             {
-                <img class="tech-icon" src="@tech.IconUrl" alt="@tech.Name" title="@tech.Name" />
-
+                <img class="tech-icon img-fluid" src="@tech.IconUrl" alt="@tech.Name" title="@tech.Name" />
             }
         </div>
 

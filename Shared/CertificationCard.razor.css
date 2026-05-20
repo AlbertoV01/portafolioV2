@@ -1,0 +1,53 @@
+
+
+/* Estilo del Marco Moderno con Degradado Azul Oscuro */
+.cert-marco {
+    border: 2px solid #415a77;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Efecto Hover (Al pasar el mouse) */
+.cert-marco:hover {
+    transform: translateY(-5px);
+    border-color: #00b4d8; /* Brillo azul claro al pasar el mouse */
+    box-shadow: 0 12px 30px rgba(0, 180, 216, 0.2);
+    cursor: pointer;
+}
+
+/* Contenedor de la imagen para que actúe como un marco interno */
+.cert-imagen-wrapper {
+    background-color: #000814;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 4 / 3; /* Mantiene una proporción limpia para certificados */
+}
+
+/* Ajuste de la imagen del certificado */
+.cert-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Colores de texto personalizados */
+.text-gradient {
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    -webkit-background-clip: text;
+    background-clip: calc();
+    -webkit-text-fill-color: transparent;
+}
+
+.text-blue-light {
+    color: #90e0ef;
+}

@@ -1,0 +1,18 @@
+@inherits OwningComponentBase
+    <div class="cert-marco">
+        <div class="cert-contenido">
+            <div class="cert-imagen-wrapper">
+                <!-- Usamos la ruta relativa ./images/  -->
+                <img src="./images/@Certification?.Imagen" alt="@Certification?.Titulo" class="cert-img" />
+            </div>
+            <div class="cert-info text-center mt-3">
+                <h5 class="fw-bold text-white mb-1">@Certification?.Titulo</h5>
+                <p class="text-blue-light small mb-0">@Certification?.Institucion</p>
+            </div>
+        </div>
+    </div>
+
+@code {
+    [Parameter]
+    public CertificationItem ?Certification { get; set; }
+}

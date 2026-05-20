@@ -10,7 +10,8 @@
 }
 else
 {
-    <div class="projects-grid">
+    int index=1;
+    <div class="projects-grid fade-in-card" style="animation-delay: @(index * 0.15)s;">
         @foreach (ProjectItem p in projects)
         {
             <ProjectCard Project="p" />
@@ -26,4 +27,5 @@ else
         // carga desde wwwroot/data/projects.json
         projects = await Http.GetFromJsonAsync<List<ProjectItem>>("data/projects.json");
     }
+    
 }

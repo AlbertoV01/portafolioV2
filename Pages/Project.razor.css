@@ -1,0 +1,17 @@
+
+.projects-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap: 12px;
+  align-items:flex-start;
+  justify-content: center;
+  
+}
+.project-title{
+  color:#a7bece;
+}
+
+.desc{
+  color: #e2e8f0;
+}
+
