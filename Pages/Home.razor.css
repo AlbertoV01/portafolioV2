@@ -1,0 +1,83 @@
+/* Contenedor principal de la sección */
+.about-section {    
+    min-height: 90vh;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    flex-direction: column !important;
+    gap: 90px;
+}
+
+/* Envoltorio para controlar el ancho máximo del texto y centrarlo */
+.about-container {
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid rgba(65, 90, 119, 0.3);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+.about-containerSkills{
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    max-width: 1200px;
+    text-align: center;
+
+
+}
+
+/* Estilo del Título Principal */
+.about-title {
+    font-size: 40px; 
+    color: #a7bece; 
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 1.6;
+    color: rgb(80, 124, 148);
+
+}
+h3{
+    font-size: 16px;
+    line-height: 1.6;
+    color: darkgrey;
+
+}
+.h3skills{
+    font-weight: bold;
+}
+
+/* Estilo para los Párrafos */
+.about-paragraph {
+    font-size: 16px; 
+    color: #e2e8f0; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+.highlight-name {
+   color: var(--highlight-color);
+    font-weight: 700;
+}
+
+
+
+/* Pequeñas etiquetas (Badges) para tecnologías (.NET, Blazor, C#) */
+.tech-badge {
+    background: rgba(75, 188, 211, 0.15);
+    color: #58a3e9 !important;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    font-size: 1rem;
+    display: inline-block;
+}
+ 

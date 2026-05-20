@@ -1,0 +1,28 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  background: transparent;
+  margin: 12px;
+}
+.project-screenshot {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-title{color:#a7bece;}
+.project-body { padding: 12px; }
+.project-body h3 { margin: 0 0 6px 0; font-size: 1.1rem; }
+.desc { font-size: 0.95rem; color: #e2e8f0; }
+.tech-row { margin-top: 8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;  }
+.tech-icon { width:28px; height:28px; }
+.links { margin-top:10px; display:flex; gap:8px; }
+.btn { padding:6px 10px; border-radius:6px; text-decoration:none;  color:white; font-weight:600; }
+.btn:hover{
+    color: rgb(240, 240, 240);               /* Cambia el color del texto */
+    text-decoration: underline; /* Subraya el enlace */
+}
+.btn.outline { background:transparent; border:1px solid #0b76ef; color:#0b76ef; }
