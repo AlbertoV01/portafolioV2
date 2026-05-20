@@ -1,0 +1,16 @@
+[
+    
+    {"Titulo" :  "Conceptos Básicos de Hardware de Computadora", "Institucion" :  "Cisco Network Academy", "Imagen" :  "computerhardware.png" },
+    {"Titulo" :  "Responsive Web Design", "Institucion" :  "freeCodeCamp", "Imagen" : "responsivewd.png" },
+    {"Titulo" : "Foundational C# with Microsoft", "Institucion" :  "freeCodeCamp", "Imagen" :  "microsoftfoundation.png" },
+    {"Titulo" : "Curso de C Y C++ ¡Desde 0!", "Institucion" :  "Udemy", "Imagen" :  "curso c y cmasmas.jpg" },
+    {"Titulo" :  "Máster en SQL Server: Desde cero a nivel Profesional [2024]", "Institucion" :  "Udemy", "Imagen" : "mastersqlserver.jpg" },
+    {"Titulo" : "Aprende SQL desde cero: ¡Curso con mas de 50 ejercicios! 1", "Institucion" :  "Udemy", "Imagen" :  "sql50ejercicios.jpg" },
+    {"Titulo" :  "Indtroducción a C#", "Institucion" :"sololearn", "Imagen" :"introductioncsharp.jpg"},
+    {"Titulo" :  "Crea un videojuego como Flappy Bird desde 0", "Institucion" :  "Udemy", "Imagen" :  "flappybird.jpg" },
+    {"Titulo" :  "Aprende a programar desde cero en Visual Studio", "Institucion" :  "Udemy", "Imagen" :  "visualstudio.jpg" },
+    {"Titulo" :  "English Certificate", "Institucion" :"EF SET", "Imagen" :"efset.png"},
+    {"Titulo" :  "Master en C# de cero a (Windows Forms - Xamarin - App Consola)", "Institucion" : "Udemy", "Imagen" :  "masterencsharp.jpg" },
+    {"Titulo" : "Fundamento de Bases de datos para principiantes", "Institucion" :  "Udemy", "Imagen" : "fundamentosbdd.jpg" }
+    
+]

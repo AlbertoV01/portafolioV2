@@ -28,26 +28,6 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/About.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Certifications.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Project.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Shared/ProjectCard.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2plY3RDYXJkLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,3 +39,27 @@ build_metadata.AdditionalFiles.CssScope = b-2n88tkpga1
 [C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-1d85i90iqk
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ym76zoi3o1
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Certifications.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2VydGlmaWNhdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qlb6omc7qp
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0cs7cc07p1
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Pages/Project.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-6kzivc56hh
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Shared/CertificationCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENlcnRpZmljYXRpb25DYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3rlrkw6p0d
+
+[C:/Users/Alber/OneDrive/Escritorio/Proyectos/portafolioV2/Shared/ProjectCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2plY3RDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-jr5ukbnefz

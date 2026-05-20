@@ -1,49 +1,40 @@
 ﻿@inherits LayoutComponentBase
-@inject NavigationManager Navigation
-@inject IJSRuntime JS
-@implements IDisposable
-
+@inject ThemeService ThemeService
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
+        <div class="top-row px-4">
+            <div class="top-row-name">
+                <span>Alberto  |  Valenzuela</span>
+            
+            </div>
+        </div>
         
-       
-    @code {
-   
-
-
-  protected override void OnInitialized()
-    {
-        Navigation.LocationChanged += OnLocationChanged;
-    }
-
-    private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
-    {
-        if (Navigation.Uri.Contains("/projects", StringComparison.OrdinalIgnoreCase))
-        {
-            JS.InvokeVoidAsync("setBodyOverflow", "auto");
-        }
-        else
-        {
-            JS.InvokeVoidAsync("setBodyOverflow", "hidden");
-        }
-    }
-
-    public void Dispose()
-    {
-        Navigation.LocationChanged -= OnLocationChanged;
-    }
-
-
-    }
-
-
-        <article class="content px-4, home-container">
+        <article class="content px-4 home-container">
             @Body
         </article>
         
     </main>
+    <style>
+        span{
+            font-weight: bold;
+            color: aliceblue;
+        }
+        
+    </style>
 </div>
+@code{
+    protected override void OnInitialized()
+    {
+        // Nos suscribimos al evento para que el Layout se vuelva a renderizar si cambia el tema
+        ThemeService.OnThemeChanged += StateHasChanged;
+    }
+    public void Dispose()
+    {
+        // Desvincular el evento al destruir el componente
+        ThemeService.OnThemeChanged -= StateHasChanged;
+    }
+}
