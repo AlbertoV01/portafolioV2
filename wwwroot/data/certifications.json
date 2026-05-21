@@ -11,6 +11,6 @@
     {"Titulo" :  "Aprende a programar desde cero en Visual Studio", "Institucion" :  "Udemy", "Imagen" :  "visualstudio.webp" },
     {"Titulo" :  "English Certificate", "Institucion" :"EF SET", "Imagen" :"efset.webp"},
     {"Titulo" :  "Master en C# de cero a (Windows Forms - Xamarin - App Consola)", "Institucion" : "Udemy", "Imagen" :  "masterencsharp.webp" },
-    {"Titulo" : "Fundamento de Bases de datos para principiantes", "Institucion" :  "Udemy", "Imagen" : "fundamentosbdd.webp" },
+    {"Titulo" : "Fundamento de Bases de datos para principiantes", "Institucion" :  "Udemy", "Imagen" : "fundamentosbdd.webp" }
     
 ]
