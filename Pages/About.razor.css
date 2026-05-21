@@ -32,7 +32,7 @@
     /* Degradado azul brillante en el texto */
     background: #a7bece;
     -webkit-background-clip: text;
-    background-clip: calc();
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
