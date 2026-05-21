@@ -455,7 +455,7 @@ h3[b-0cs7cc07p1]{
   border-radius: 1px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
   margin: 12px;
 }
 .project-screenshot[b-jr5ukbnefz] {

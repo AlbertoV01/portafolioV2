@@ -12,10 +12,11 @@ else
 {
     int index=1;
     <div class="projects-grid fade-in-card" style="animation-delay: @(index * 0.15)s;">
-        @foreach (ProjectItem p in projects)
-        {
-            <ProjectCard Project="p" />
-        }
+        <Virtualize Items="projects" Context="p">
+                        <ProjectCard Project="p" />
+
+        </Virtualize>
+       
     </div>
 }
 
