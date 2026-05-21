@@ -2,12 +2,12 @@
   {
     "Title": "Portafolio Web V1",
     "ShortDescription": "Página web donde se muestra toda mi experiencia hecha en Blazor",
-    "ImageUrl": "images/portafolio.png",
+    "ImageUrl": "images/portafolio.webp",
     "GitUrl": "https://github.com/AlbertoV01/portafolioweb",
     "DemoUrl": "",
     "Technologies": [
       { "Name": ".C#", "IconUrl": "icons/csharp-original.svg" },
-      { "Name": ".NET", "IconUrl": "icons/net-seeklogo.png" },
+      { "Name": ".NET", "IconUrl": "icons/Microsoft_NET_LOGO.svg" },
       { "Name": "Blazor", "IconUrl" : "icons/blazor-original.svg"},
       { "Name": "Gemini", "IconUrl": "icons/gemini-color.svg"}
     ]
@@ -15,12 +15,12 @@
   {
     "Title": "Sitio Web de Baseball",
     "ShortDescription": "Información dde jugadores, juegos jugados y resultados",
-    "ImageUrl": "images/baseball.png",
+    "ImageUrl": "images/baseball.webp",
     "GitUrl": "https://github.com/AlbertoV01/baseballweb",
     "DemoUrl": "",
     "Technologies": [
       { "Name": ".C#", "IconUrl": "icons/csharp-original.svg" },
-      { "Name": ".NET", "IconUrl": "icons/net-seeklogo.png" },
+      { "Name": ".NET", "IconUrl": "icons/Microsoft_NET_LOGO.svg" },
       { "Name": "Blazor", "IconUrl" : "icons/blazor-original.svg"},
       { "Name": "SQ Lite", "IconUrl": "icons/sqlite.svg" },
       { "Name": "Gemini", "IconUrl": "icons/gemini-color.svg"}
@@ -29,19 +29,19 @@
   {
     "Title": "Aplicación de Asistencia",
     "ShortDescription": "Permite tomar asistencia y registrarlo en una base de datos MongoDB",
-    "ImageUrl": "images/asistencia.jpg",
+    "ImageUrl": "images/asistencia.webp",
     "GitUrl": "https://github.com/AlbertoV01/Asistencia",
     "DemoUrl": "",
     "Technologies": [
       { "Name": ".C#", "IconUrl": "icons/csharp-original.svg" },
-      { "Name": ".NET", "IconUrl": "icons/net-seeklogo.png" },
+      { "Name": ".NET", "IconUrl": "icons/Microsoft_NET_LOGO.svg" },
       { "Name": "MongoDB", "IconUrl": "icons/mongodb-original-wordmark.svg" }
     ]
   },
   {
     "Title": "Sistema de Inventario",
     "ShortDescription": "Aplicación de escritorio de un Sistema de Inventario",
-    "ImageUrl": "images/transacciones.png",
+    "ImageUrl": "images/transacciones.webp",
     "GitUrl": "https://github.com/AlbertoV01/Transacciones",
     "DemoUrl": "",
     "Technologies": [
@@ -54,7 +54,7 @@
   {
     "Title": "Taller de Base de datos",
     "ShortDescription": "Permite crear roles, usuarios, crear tablas y ejecutar consultas",
-    "ImageUrl": "images/tbdd.png",
+    "ImageUrl": "images/tbdd.webp",
     "GitUrl": "https://github.com/AlbertoV01/TBDD",
     "DemoUrl": "",
     "Technologies": [
@@ -67,7 +67,7 @@
   {
     "Title": "MSGBD",
     "ShortDescription": "Mini Sistema Gestor de Base de datos el cual realiza operaciones básicas",
-    "ImageUrl": "images/msgbd.png",
+    "ImageUrl": "images/msgbd.webp",
     "GitUrl": "https://github.com/AlbertoV01/MiniSGBD?tab=readme-ov-file",
     "DemoUrl": "",
     "Technologies": [
@@ -78,10 +78,11 @@
 
     ]
   },
+  
   {
     "Title": "Métodos Numéricos",
     "ShortDescription": "Aplicación que resuelve sistemas de ecuaciones",
-    "ImageUrl": "images/metodosnumericos.png",
+    "ImageUrl": "images/metodosnumericos.webp",
     "GitUrl": "https://github.com/AlbertoV01/Metodos-Numericos-401",
     "DemoUrl": "",
     "Technologies": [
