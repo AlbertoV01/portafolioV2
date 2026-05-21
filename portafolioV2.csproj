@@ -4,6 +4,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Activa el recorte estricto de código muerto en Release -->
+    <PublishTrimmed>True</PublishTrimmed>
+    <TrimMode>link</TrimMode>
   </PropertyGroup>
 
   <ItemGroup>
