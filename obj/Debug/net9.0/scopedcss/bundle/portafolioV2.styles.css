@@ -228,7 +228,7 @@ background-color: rgba(0, 0, 0, 0.5);}
     /* Degradado azul brillante en el texto */
     background: #a7bece;
     -webkit-background-clip: text;
-    background-clip: calc();
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -280,7 +280,7 @@ background-color: rgba(0, 0, 0, 0.5);}
     /* Degradado azul brillante en el texto */
     background: #a7bece;
     -webkit-background-clip: text;
-    background-clip: calc();
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -291,6 +291,7 @@ background-color: rgba(0, 0, 0, 0.5);}
     line-height: 1.8; 
     margin-bottom: 20px;
 }
+
 /* /Pages/Home.razor.rz.scp.css */
 /* Contenedor principal de la sección */
 .about-section[b-0cs7cc07p1] {    
@@ -440,7 +441,7 @@ h3[b-0cs7cc07p1]{
 .text-gradient[b-3rlrkw6p0d] {
     background: linear-gradient(45deg, #00b4d8, #90e0ef);
     -webkit-background-clip: text;
-    background-clip: calc();
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

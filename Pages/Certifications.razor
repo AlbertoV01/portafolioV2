@@ -9,18 +9,22 @@
     </h2>
 
     @if (certification == null)
-{
-    <p>Cargando proyectos...</p>
-}
-else
-{
-    int index=1;
-    <div class="certifications-grid abaout-paragraph fade-in-card" style="animation-delay: @(index * 0.15)s;">
-        <Virtualize Items="certification" Context="c">
-            <CertificationCard Certification="c" />
-        </Virtualize>
-    </div>
-}
+    {
+        <p>Cargando proyectos...</p>
+    }
+    else
+    {
+        int index=1;
+
+        <div class="certifications-grid abaout-paragraph fade-in-card" style="animation-delay: @(index * 0.15)s;">
+                @foreach(CertificationItem c in certification)
+                {
+                    <CertificationCard Certification="c" />
+                }
+        </div>
+                
+
+    }
 </div>
 
 @code {
