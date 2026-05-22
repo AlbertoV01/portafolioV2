@@ -453,11 +453,14 @@ h3[b-gjzjxcfstg]{
   display: flex;
   flex-direction: column;
   width: 320px;
-  border-radius: 1px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   background: transparent;
+  backdrop-filter: blur(12px);
   margin: 12px;
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 .project-screenshot[b-rf5ylbds6m] {
   width: 100%;
